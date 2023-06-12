@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+
+<html ⚡="">
+  <head>
+    <meta charset="utf-8" />
+    <title>Resto euskadi</title>
+    <script async="" src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+    <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+    <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
+    <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+    <script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"></script>
+    <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet"/>
+    <link rel="canonical" href="https://www.ampstart.com/templates/store.amp" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="amp-google-client-id-api" content="googleanalytics" />
+    <link rel="stylesheet" href="../assets/style.css">
+
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+      
+    <noscript
+      ><style amp-boilerplate="">
+        body {
+          -webkit-animation: none;
+          -moz-animation: none;
+          -ms-animation: none;
+          animation: none;
+        }
+      </style>
+    </noscript>
+
+    <style amp-custom="">
+.hero-reservation {
+  background-image: url(../assets/images/booking/hero-bg-desktop.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 75vh;
+}
+.content-reservation {
+  width: 80%;
+  height: 70%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.reservation-texte {
+  width: 35%;
+  height: 50%;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ color: white;
+}
+.logo {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+}
+.reservation-box {
+  position: absolute;
+  z-index: 1;
+  top: 25%;
+  left: 50%;
+  height: 540px;
+  width: 545px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 30px 45px;
+}
+.content-box {
+  height: 90%;
+  width: 90%;
+  margin: auto;
+}
+form {
+  width: 100%;
+  height: 100%;
+}
+.box-input {
+  height: 43px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.white-space {
+  height: 40vh;
+}
+.pattern-position {
+  height: 70%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.pattern-gray {
+  position: relative;
+  top: 20%;
+  left: -27%;
+  z-index: 0;
+}
+.pattern-line {
+  position: relative;
+  left: 30%;
+}
+input[type="date"] {
+  color: #333;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 3px;
+}
+/*SECTION FOOTER*/
+.container-footer {
+        height: 60vh;
+        background-color: var(--primary-2);
+        color: var(--white-1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .content-footer {
+          height: 90%;
+          width: 80%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: center;
+        }
+        .content-diner {
+            height: 70%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+          }
+          .open-times, .name-diner {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+          }
+
+@media (min-width: 768px) {
+
+    .container-footer {
+        height: 50vh;
+       
+      }
+      .content-footer {        
+          flex-direction: row;  
+          height: 80%;
+          width: 90%;
+        }
+        .content-logo {
+            height: 100%;
+        } 
+        .content-diner {
+            width: 50%;
+            height: 100%;
+            justify-content: space-between;
+          }
+          .open-times, .name-diner {
+              align-items: start;
+             height: 40%;
+          }
+
+}
+@media (min-width: 1023px) {
+
+    .container-footer {
+        height: 30vh;
+      }
+      .content-footer {        
+          flex-direction: row;  
+          height: 60%;
+          width: 90%;
+        }
+        .content-logo {
+            height: 100%;
+        } 
+        .content-diner {
+            width: 70%;
+            height: 100%;
+            flex-direction: row;
+            justify-content: space-between;
+          }
+          .open-times, .name-diner {
+              height: 100%;
+          }
+}
+/*Global class*/
+      .pattern {
+        height: 8px;
+        width: 80px;
+      }
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+      .logo-img {
+        width: 100px;
+        height: 40px;
+      }
+      .input-1 {
+        height: 43px;
+        border: none;
+        border-bottom: 1px solid gray;
+        }
+
+        .label-1 {
+        width: 200px;
+        height: 43px;
+        border-bottom: 1px solid gray;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
+
+        .label-2 {
+        width: 30%;
+        height: 43px;
+        border-bottom: 1px solid gray;
+        }
+        .label-3 {
+        width: 10%;
+        height: 43px;
+        padding: 10px;
+        border-bottom: 1px solid gray;
+        }
+        fieldset {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            border: none;
+        }
+        .btn-3 {
+        height: 64px;
+        width: 100%;
+        background-color: var(--primary-2);
+        color: white;
+        letter-spacing: 1px;
+        font-weight: bold;
+        cursor: pointer;
+        border: 1px solid white;
+        text-transform: uppercase;
+        
+        transition: background-color 0.2s;
+
+        }
+        .btn-3:hover {
+            background-color: white;
+            color: var(--primary-2);
+        border: 1px solid var(--primary-2);
+        }
+
+/*Header*/
+    .headerbar {
+        position: absolute;
+        top: 2vh;
+        right: 5vw;
+        color: white;
+        font-size: 2rem;
+    }
+    .sidebar .dropdown-item,
+    .sidebar .dropdown header,
+    .sidebar .nav-item {
+      margin: 0 0 2rem;
+    }
+
+    .sidebar {
+      background-color: rgb(255, 253, 243);
+      min-width: 300px;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      width: 300px;
+    }
+
+    .navbar-trigger {
+      cursor: pointer;
+      font-size: 2rem;
+      line-height: 3.5rem;
+      outline: none;
+      padding-right: 1rem;
+    }
+
+    a {
+      color: #000;
+      text-decoration: none;
+    }
+
+    .label {
+      font-size: 0.875rem;
+      letter-spacing: 0.06rem;
+      line-height: 1.125rem;
+      list-style: none;
+      padding: 0;
+      text-transform: uppercase;
+    }
+
+    .dropdown > section > header {
+      background-color: rgba(0, 0, 0, 0);
+      border: 0;
+      outline: none;
+    }
+
+    .dropdown {
+      min-width: 200px;
+    }
+
+    .dropdown.absolute {
+      z-index: 100;
+    }
+    .nav-dropdown .dropdown > section > header:after {
+      color: #003f93;
+      content: "+";
+      display: inline-block;
+      padding: 0 0 0 1.5rem;
+    }
+    .nav-dropdown .dropdown > [expanded] > header:after {
+      content: "–";
+    }
+    .dropdown-items {
+      list-style: none;
+      padding-left: 20px;
+      z-index: 200;
+    }
+
+    /*Carousel*/
+    .carousel {
+      margin: 0 auto;
+      max-width: 700px;
+    }
+    </style>
+  </head>
+  <body>
+    <header class="headerbar">
+      <div class="navbar-trigger" role="button" tabindex="0" on="tap:sidebar1.toggle">☰</div>
+    </header>
+    <amp-sidebar class="sidebar" id="sidebar1" layout="nodisplay" side="right">
+        <div class="navbar-trigger" on="tap:sidebar1.toggle">X</div>
+          <nav class="nav">
+              <ul class="label">
+                  <li class="nav-item">
+                      <a href="./reservation.amp.html">Reservation</a>
+                  </li>
+                  <li class="nav-item nav-dropdown">
+                      <amp-accordion layout="container" disable-session-states class="dropdown">
+                          <section>
+                              <header>Menu</header>
+                              <ul class="dropdown-items">
+                                  <li class="dropdown-item">
+                                      <a href="#">Brunch</a>
+                                  </li>
+                                  <li class="dropdown-item">
+                                      <a href="#">Diner</a>
+                                  </li>
+                              </ul>
+                          </section>
+                      </amp-accordion>
+                  </li>
+                  <li class="nav-item nav-dropdown">
+                      <amp-accordion layout="container" disable-session-states class="dropdown">
+                          <section>
+                              <header>Contact</header>
+                              <ul class="dropdown-items">
+                                  <li class="dropdown-item">
+                                      <a href="#">contact@gmail.com</a>
+                                  </li>
+                                  <li class="dropdown-item">
+                                    <a href="#">+00 44 123 4567</a>
+                                </li>
+                              </ul>
+                          </section>
+                      </amp-accordion>
+                  </li>
+              </ul>
+          </nav>
+      </amp-sidebar>
+
+    <section>
+        <div class="container">
+            <div class="hero-reservation">
+              <div class="content-reservation">
+                <div class="logo">
+                  <a href="./store.amp.html"><amp-img class="logo-img" src="../assets/images/logo.png" height="1" width="1" layout="responsive"></amp-img></a>
+                </div>
+                <div class="reservation-texte">
+                  <h2>Reservations</h2>
+                  <p>We can't wait to host you. If you have any special requirements please fell free to call on the phone number below.
+                    We'll be happy to accommodate you.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="reservation-box">
+              <div class="content-box">
+                <form method="post"
+                    action-xhr="https://example.com/subscribe"    target="_top">
+                    <fieldset>
+                        <input class="input-1" type="text" placeholder="Name"  id="name" required>
+                    <br>
+                        <input class="input-1" type="email" placeholder="Email"  id="email" required>
+                    <br>
+
+                    <div class="box-input">
+                        <label class="label-1" for="date">Pick a Date</label>
+                        <input class="label-2" type="date" value="2023-05-18"  id="date" required>
+                    </div>
+                    <div class="box-input">
+                        <label class="label-1" for="time">Pick a Time</label>
+                        <input class="label-2" type="time" value="13:00"  id="time" required>
+                    </div>
+
+                    <div class="box-input">
+                        <label class="label-1 " for="number">People</label>
+                        <input class="label-3" type="number" min="1" max="9" value="4" id="people" required>
+                    </div>
+
+                    <input type="submit" class="btn-3"
+                        value="MAKE RESERVATION">
+                    </fieldset>
+
+                    <div submit-success>
+                    <template type="amp-mustache">
+                        Subscription successful!
+                    </template>
+                    </div>
+                    <div submit-error>
+                    <template type="amp-mustache">
+                        Subscription failed!
+                    </template>
+                    </div>
+                </form>
+              </div>
+            </div>
+            <div class="white-space">
+              <div class="pattern-position">
+                <a href="./store.amp.html"><amp-img class="logo-img" src="../assets/images/logo.png" height="1" width="1" layout="responsive"></amp-img></a>
+                
+                <img class="pattern-line" src="../assets/images/patterns/pattern-lines.svg" alt="">
+                <img class="pattern-gray" src="../assets/images/patterns/pattern-curve-bottom-right.svg" alt="">
+              </div>
+            </div>
+          </div>
+    </section>
+    <section class="carousel">
+      <amp-carousel on="slideChange:AMP.setState({carousel: {selectedSlide:event.index}})"
+      [slide]="carousel.selectedSlide" lightbox id="imageSlides" layout="responsive"
+      width="412" height="309" type="slides" loop>
+      <amp-img src="../assets//images//homepage//beef-desktop-tablet@2x.jpg"
+          width="412" height="309" layout="responsive"></amp-img>
+      <amp-img src="../assets//images//homepage/chocolate-desktop-tablet@2x.jpg"
+          width="412" height="309" layout="responsive"></amp-img>
+      <amp-img src="../assets//images//homepage//salmon-desktop-tablet.jpg"
+          width="412" height="309" layout="responsive"></amp-img>
+      
+  </amp-carousel>
+  <amp-selector id="ampSelector" [selected]="carousel.selectedSlide"
+      on="select:AMP.setState({carousel: {selectedSlide:event.targetOption}})">
+      <amp-carousel layout="fixed-height" height="78" class="thumbnail-carousel">
+          <amp-img src="../assets//images//homepage//beef-desktop-tablet@2x.jpg"
+              option="0" selected role="button" tabindex="1" width="96" height="72" layout="fixed"></amp-img>
+          <amp-img src="../assets//images//homepage//chocolate-desktop-tablet.jpg"
+              option="1" role="button" tabindex="1"  width="96" height="72" layout="fixed"></amp-img>
+          <amp-img src="../assets//images//homepage//salmon-desktop-tablet.jpg"
+              option="2" role="button" tabindex="1" width="96" height="72" layout="fixed"></amp-img>
+      </amp-carousel>
+  </amp-selector>
+    </section>
+    <section>
+        <div class="container-footer">
+            <div class="content-footer">
+                <div class="content-logo">
+                    <div class="logo-part">
+                      <a href="./store.amp.html"><amp-img class="logo-img" src="../assets/images/logo.png" height="1" width="1" layout="responsive"></amp-img></a>
+                    </div>
+                </div>
+                <div class="content-diner">
+                    <div class="name-diner">
+                        <h3>MARTHWAITE, SEDBERGH CUMBRIA</h3>
+                        <p>+00 44 123 4567</p>
+                    </div>
+                    <div class="open-times">
+                        <h3>OPEN TIMES</h3>
+                        <p>MON - FRI: 09:00 AM - 10:00 PM</p>
+                        <p>SAT - SUN: 09:00 AM - 11:30 PM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+  </body>
+</html>
